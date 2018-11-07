@@ -1,0 +1,15 @@
+# Compiled sources
+*.pyc
+*.o
+
+# Packages
+*.gz
+*.tar
+
+# Logs and database
+*.log
+*.sqlite
+
+# OS generated
+.idea/**/*
+.bundle
