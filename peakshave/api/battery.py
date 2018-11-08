@@ -26,6 +26,22 @@ class Battery:
         """
         self.current_level = max(self.current_level - value, 0)
 
+    def __isub__(self, value):
+        """
+        Subtract charge without accessing properties
+        Prevents subtraction past 0
+
+        Parameters
+        ----------
+        value - value to subtract
+
+        Returns
+        -------
+        None
+        """
+        self.current_level = max(self.current_level - value, 0)
+        return self
+
     def __add__(self, value):
         """
         Add charge without accessing properties
@@ -40,6 +56,22 @@ class Battery:
         None
         """
         self.current_level = min(self.current_level + value, self.max_capacity)
+
+    def __iadd__(self, value):
+        """
+        Add charge without accessing properties
+        Prevents addition past self.max_capacity
+
+        Parameters
+        ----------
+        value - value to add
+
+        Returns
+        -------
+        None
+        """
+        self.current_level = min(self.current_level + value, self.max_capacity)
+        return self
 
     def drain(self):
         """

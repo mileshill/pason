@@ -32,6 +32,15 @@ class TestBattery(unittest.TestCase):
         self.battery - 5
         self.assertEqual(self.battery.current_level, 5)
 
+    def test_isub_decrement(self):
+        """
+        Single discharge
+        Returns
+        -------
+        """
+        self.battery -= 5
+        self.assertEqual(self.battery.current_level, 5)
+
     def test_decrement_to_min_level(self):
         """
         No decrements past 0

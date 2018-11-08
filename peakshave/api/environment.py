@@ -10,6 +10,7 @@ class Environment:
         assert isinstance(battery, Battery)
         self.battery = battery
 
+
 if __name__ == '__main__':
     # Create an environment
     battery = Battery(10, 10)

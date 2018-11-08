@@ -10,10 +10,12 @@ jedi==0.13.1
 jupyter-client==5.2.3
 jupyter-core==4.4.0
 kiwisolver==1.0.1
+line-profiler==2.1.2
 matplotlib==3.0.1
 numpy==1.15.4
 pandas==0.23.4
 parso==0.3.1
+-e git+https://gitlab.com/power_rangers/mhill-cs-interview.git@08166ebff6d66c424aa4aef39a75bbfe7f3d91dd#egg=peakshave&subdirectory=peakshave
 pexpect==4.6.0
 pickleshare==0.7.5
 prompt-toolkit==2.0.7
