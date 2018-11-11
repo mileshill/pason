@@ -1,5 +1,7 @@
 """
 Simple genetic algorithm that minimizes monthly load.
+Worked well for reducing overall demand on intial tests.
+Ran out of time to refine implementation
 """
 import numpy as np
 
