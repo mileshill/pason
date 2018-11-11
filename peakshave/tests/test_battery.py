@@ -71,6 +71,18 @@ class TestBattery(unittest.TestCase):
         battery = Battery(max_capacity=10, max_flux=10, current_charge_level=initial_charge_level)
         self.assertEqual(battery.current_level,initial_charge_level)
 
+    def test_bool_true(self):
+        self.assertTrue(self.battery)
+
+    def test_bool_false(self):
+        self.assertFalse((self.battery.drain()))
+
+    def test_flux_history(self):
+        self.battery.drain()
+        self.battery.charge()
+        self.battery -= 1
+        self.battery += 1
+        self.assertEqual(len(self.battery.flux_history), 5)
 
 if __name__ == '__main__':
     unittest.main()

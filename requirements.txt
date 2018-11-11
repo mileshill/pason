@@ -15,7 +15,7 @@ matplotlib==3.0.1
 numpy==1.15.4
 pandas==0.23.4
 parso==0.3.1
--e git+https://gitlab.com/power_rangers/mhill-cs-interview.git@08166ebff6d66c424aa4aef39a75bbfe7f3d91dd#egg=peakshave&subdirectory=peakshave
+-e git+https://gitlab.com/power_rangers/mhill-cs-interview.git@d695a83374d21eb5a30bc4e1f8f3e040e92bc987#egg=peakshave&subdirectory=peakshave
 pexpect==4.6.0
 pickleshare==0.7.5
 prompt-toolkit==2.0.7
@@ -25,6 +25,8 @@ pyparsing==2.3.0
 python-dateutil==2.7.5
 pytz==2018.7
 pyzmq==17.1.2
+redis==2.10.6
+scikit-learn==0.20.0
 scipy==1.1.0
 seaborn==0.9.0
 six==1.11.0
