@@ -21,7 +21,7 @@ Markdown==3.0.1
 MarkupSafe==1.1.0
 matplotlib==3.0.1
 mpld3==0.3
-numpy==1.15.4
+numpy==1.22.0
 pandas==0.23.4
 parso==0.3.1
 -e git+https://gitlab.com/power_rangers/mhill-cs-interview.git@a65e93561f96e46223ca289681e4f6c3094cb4a8#egg=peakshave&subdirectory=peakshave
